@@ -1,56 +1,116 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
-            background-color: #454647;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between; /* Distribuir elementos a lo largo del encabezado */
-            align-items: center;
-        }
+    background-color: #3d3c3c;
+    color: #fff;
+    padding: 20px 0;
+}
 
-        .logo {
-            width: 75px;
-        }
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        nav {
-            text-align: center;
-        }
+.logo {
+    width: 75px;
+    margin-right: 20px;
+}
 
-        nav a {
-            text-decoration: none;
-            margin: 0 15px;
-            color: #ffffff;
-            font-weight: bold;
-        }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-        .login-button {
-            background-color: #f2f2f2;
-            color: #333;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
 
-.jumbotron {
-            background-color: #2c2c2e; 
-            color: #fff;
-            padding: 20px; 
-            text-align: center; 
-        }
+nav ul li:last-child {
+    margin-right: 0;
+}
 
-        h1 {
-            font-size: 60px; 
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-        h2 {
-            font-size: 35px; 
-        }
-        p {
-            font-size: 24px;
-        }
+nav ul li a:hover {
+    color: #ff4500;
+}
 
+.login-button {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer; 
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+.cta {
+    background-color: #454647;
+    color: white;
+    grid-column: span 2;
+    text-align: center;
+    padding: 40px;
+}
+
+.cta h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el footer */
 .footer {
     background-color: #333;
     color: #fff;
@@ -100,4 +160,77 @@ header {
 .footer-bottom p {
     margin: 0;
     color: #fff;
+}
+ 
+/* Estilos para la versión de escritorio */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos para el contenido */
+.content {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Estilos para la versión móvil */
+@media screen and (max-width: 500px) {
+    /* Estilos para el encabezado en versión móvil */
+    header {
+        padding: 10px;
+    }
+
+    /* Estilos para la navegación en versión móvil */
+    nav ul {
+        
+       
+text-align: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        
+       
+margin-bottom: 10px;
+    }
+
+    /* Estilos para el botón de inicio de sesión en versión móvil */
+    .login-button {
+        margin-top: 10px;
+    }
+
+    /* Estilos para el contenido en versión móvil */
+    .content {
+        padding: 10px;
+    }
+
+    /* Estilos para el título en versión móvil */
+    
+    .
+.content h1 {
+        font-size: 24px;
+    }
+
+    /* Estilos para el subtítulo en versión móvil */
+    .content h2 {
+        font-size: 18px;
+    }
+
+    /* Estilos para el párrafo en versión móvil */
+    .content p {
+        font-size: 16px;
+    }
 }
