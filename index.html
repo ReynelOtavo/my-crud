@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King´s of the games</title>
     <style>
-        /* Estilos para el encabezado */
         header {
             background-color: #454647;
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: space-between; /* Distribuir elementos a lo largo del encabezado */
+            justify-content: space-between; 
             align-items: center;
         }
 
@@ -88,104 +87,92 @@
 <body>
   <div class="jumbotron">
  <h1>King´s of the games</h1>
-        <h2>Bienvenidos a nuestra tienda</p>
-        <p>En este es pacio encontraras como registrarte</p>
+        <h2>Bienvenidos</p>
+        <p>En este es pacio encontraras un formulario para que nosotros reconoscamos el motivo detu visita</p>
   </div>
-
-   <!DOCTYPE html>
-<html lang="en">
-<head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
-<body>
-    <!--Navegación-->
-    <nav class="navbar navbar-light bg-light">
-          <span class="navbar-brand mb-0 h1">App de Librería</span>
-    </nav>
-
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Agregar nuevo libro</h2>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" id="titulo" class="form-control my-3" placeholder="Ingresar título">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="descripcion" class="form-control my-3" placeholder="Ingresar descripción"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="number" id="precio" class="form-control my-3" placeholder="Ingresar precio">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Agregar</button>
-                        </form>
-
+    <title>CRUD Tareas</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>CRUD Tareas</h1>
+    <input type="text" id="taskInput" placeholder="Ingrese una tarea">
+    <button id="addTaskBtn">Agregar Tarea</button>
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tarea</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="taskList"></tbody>
+    </table>
+  
+    <script src="crud.js"></script>
+    <footer>
+      <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Footer</title>
+            <link rel="stylesheet" href="./styles.css"> 
+        </head>
+        <body>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./logo.png" alt="Logo de la empresa">
+                </div>
+                <div class="footer-info">
+                    <p>Dirección: cll 70 a sur #58 R 51</p>
+                    <p>Teléfono: (57) 304 6968336</p>
+                    <p>Email: reynelalexaander0428@gmail.com</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <table class="table caption-top bg-light">
-                    <thead>
-                      <tr>
-                        <th scope="col">Título</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Precio</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Yo soy Robot</td>
-                        <td>Libro de Sci-Fi</td>
-                        <td>200.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="footer-bottom">
+                <p>&copy; 2023 King's of the Games.</p>
             </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        </footer>
+        
+        </body>
+        </html>
+      
     
-       <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Footer</title>
-        <link rel="stylesheet" href="./styles.css"> 
-    </head>
-    <body>
-    
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="./logo.png" alt="Logo de la empresa">
-            </div>
-            <div class="footer-info">
-                <p>Dirección: cll 70 a sur #58 R 51</p>
-                <p>Teléfono: (57) 304 6968336</p>
-                <p>Email: reynelalexaander0428@gmail.com</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon">Facebook</a>
-                    <a href="#" class="social-icon">Twitter</a>
-                    <a href="#" class="social-icon">Instagram</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 King's of the Games.</p>
-        </div>
-    </footer>
-    
-    </body>
-    </html>
-    
+     </footer>
+  </body>
+  </html>
